@@ -1,0 +1,93 @@
+body{
+  overflow-x: hidden;
+}
+#myVideo {
+  position: fixed;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  min-width: 100%;
+  min-height: 100%;
+}
+
+#countdown {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 56px;
+  color: rgb(245, 16, 188);
+}
+
+a {
+  text-decoration: none;
+}
+
+li {
+  list-style: none;
+}
+
+.navbar {
+  opacity: 1;
+  position: relative;
+  right: 20px;
+  bottom:25px;
+  width: 100%;
+  padding: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 20px;
+  color: #fff;
+}
+
+.nav-links a {
+  font-family: 'Dancing Script', cursive;
+  color: #fff;
+}
+
+
+/* LOGO */
+.logo {
+  font-size: 32px;
+}
+
+
+/* NAVBAR MENU */
+.menu {
+  display: flex;
+  gap: 1em;
+  font-size: 18px;
+}
+
+.menu li:hover {
+  background-color: rgb(132, 69, 226);
+  scale: 1.2;
+  border-radius: 5px;
+  transition: 0.3s ease;
+}
+
+
+.menu li {
+  padding: 5px 14px;
+}
+
+@media screen and (max-width:900px){
+  .navbar{
+    width:1120px;
+  }
+  .logo{
+    font-size:50px;
+  }
+  .navbar li{
+    font-size:50px;
+  }
+  #timer{
+    position:relative;
+    top:600px;
+    left:200px;
+    font-size:80px;
+    width:300%;
+  }
+}
